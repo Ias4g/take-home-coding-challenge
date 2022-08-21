@@ -1,0 +1,14 @@
+{
+  "name": "take-home-coding-challenge",
+  "version": "1.0.0",
+  "description": "Take-Home Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "author": "Izael silva",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^16.2.0"
+  }
+}
