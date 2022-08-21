@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "take-home-coding-challenge",
   "version": "1.0.0",
   "description": "Take-Home Coding Challenge",
