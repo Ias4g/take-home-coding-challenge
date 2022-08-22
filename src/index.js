@@ -17,7 +17,7 @@ import puppeteer from 'puppeteer'
 
         // Transformar os Nodes (elementos html) em objetos JS
         const txtList = txtArray.map(({ innerText }) => ({
-            innerText
+            title: innerText
         }))
 
 
