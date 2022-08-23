@@ -27,12 +27,16 @@ import puppeteer from 'puppeteer'
         ))
 
         const objectSkus = arraySkus.map(({ innerText }) => {
-            const [
+            let [
                 name,
                 currentPrice = null,
                 oldPrice = null,
                 available = false
             ] = innerText.split("\n")
+
+            if (currentPrice === "Out of stock") {
+                currentPrice = null
+            }
 
             return {
                 name,
