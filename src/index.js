@@ -10,19 +10,36 @@ import puppeteer from 'puppeteer'
     const txtList = await page.evaluate(() => {
         // Toda esta função será executada no browser.
         // Vamos pegar todas as imagens que estão na parte de posts.
-        const nodeList = document.querySelectorAll('h2')
+        const { innerText: title } = document.querySelector('h2#product_title')
+        const { innerText: brand } = document.querySelector('div.brand')
+        const nodeListCategories = document.querySelectorAll('nav a')
+        const { innerText: description } = document.querySelector('div.product-details p')
+        const nodeListSkus = document.querySelectorAll('div.card-container div.sku-name')
 
-        // Transformar n NodeList em Array.
-        const txtArray = [...nodeList]
+        // Transformar o NodeList em Array.
+        const arrayCategories = [...nodeListCategories]
+        const arraySkus = [...nodeListSkus]
 
         // Transformar os Nodes (elementos html) em objetos JS
-        const txtList = txtArray.map(({ innerText }) => ({
-            title: innerText
-        }))
+        const objectCategories = arrayCategories.map(({ innerText }) => (
+            innerText
+        ))
+        const objectSkus = arraySkus.map(({ innerText }) => (
+            innerText
+        ))
 
+        // Montando o objeto JS
+        const resultFinal = {
+            title,
+            brand,
+            categories: objectCategories,
+            description,
+            skus: objectSkus
+        }
 
         // Colocar para fora da função
-        return txtList
+        // return txtList
+        return resultFinal
     })
 
     // Escrever  os dados em um arquivo (.json)
