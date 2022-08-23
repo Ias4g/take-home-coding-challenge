@@ -15,7 +15,7 @@ import puppeteer from 'puppeteer'
         const nodeListCategories = document.querySelectorAll('nav a')
         const { innerText: description } = document.querySelector('div.product-details p')
         const nodeListSkus = document.querySelectorAll('div.card-container')
-        const { innerText: reviews_average_score } = document.querySelector('div#comments h4')
+        const { innerText: average_score } = document.querySelector('div#comments h4')
 
         // Transformar o NodeList em Array.
         const arrayCategories = [...nodeListCategories]
@@ -38,6 +38,14 @@ import puppeteer from 'puppeteer'
                 currentPrice = null
             }
 
+            if (currentPrice !== null) {
+                currentPrice = parseFloat(currentPrice.substr(2))
+            }
+
+            if (oldPrice !== null) {
+                oldPrice = parseFloat(oldPrice.substr(2))
+            }
+
             return {
                 name,
                 currentPrice,
@@ -46,13 +54,16 @@ import puppeteer from 'puppeteer'
             }
         })
 
+        const score = average_score.substr(15)
+        const reviews_average_score = parseFloat(score.replace('/5', ''))
+
         // Montando o objeto JS
         const resultFinal = {
             title,
             brand,
             categories: objectCategories,
             description,
-            objectSkus,
+            skus: objectSkus,
             reviews_average_score
         }
 
