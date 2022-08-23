@@ -14,13 +14,11 @@ import puppeteer from 'puppeteer'
         const { innerText: brand } = document.querySelector('div.brand')
         const nodeListCategories = document.querySelectorAll('nav a')
         const { innerText: description } = document.querySelector('div.product-details p')
-        const nodeListSkus = document.querySelectorAll('div.card-container div.sku-name')
-        const nodeListCurrentPrice = document.querySelectorAll('div.card-container div.sku-current-price')
+        const nodeListCurrentPrice = document.querySelectorAll('div.card-container')
         const { innerText: reviews_average_score } = document.querySelector('div#comments h4')
 
         // Transformar o NodeList em Array.
         const arrayCategories = [...nodeListCategories]
-        const arraySkus = [...nodeListSkus]
         const arrayCurrentPrice = [...nodeListCurrentPrice]
 
         // Transformar os Nodes (elementos html) em objetos JS
@@ -28,13 +26,13 @@ import puppeteer from 'puppeteer'
             innerText
         ))
 
-        const objectSkus = arraySkus.map(({ innerText }) => ({
-            name: innerText
-        }))
+        const objectCurrentPrice = arrayCurrentPrice.map(({ innerText }) => {
+            const data = innerText.split("\n")
 
-        const objectCurrentPrice = arrayCurrentPrice.map(({ innerText }) => ({
-            current_price: innerText
-        }))
+            data.map(({ name = null, currentPrice = null, oldPrice = null, available = null }) => ({
+                name, currentPrice, oldPrice, available
+            }))
+        })
 
         // Montando o objeto JS
         const resultFinal = {
@@ -42,8 +40,7 @@ import puppeteer from 'puppeteer'
             brand,
             categories: objectCategories,
             description,
-            objectSkus,
-            objectCurrentPrice,
+            skus: objectCurrentPrice,
             reviews_average_score
         }
 
