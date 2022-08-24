@@ -103,7 +103,7 @@ import puppeteer from 'puppeteer'
     })
 
     // Escrever  os dados em um arquivo (.json)
-    fs.writeFile('file.json', JSON.stringify(txtList, null, 2), err => {
+    fs.writeFile('produto.json', JSON.stringify(txtList, null, 2), err => {
         if (err) {
             throw new Error('Something went wrong')
         }
