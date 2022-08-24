@@ -14,10 +14,10 @@ Este projeto foi desenvolvido comas seguintes tecnologias
 * [Node.JS](https://nodejs.org/en/)
 * [Puppeteer](https://github.com/puppeteer/puppeteer)
 
-# Projeto
+# 💻 Projeto
 Este projeto foi desenvolvido para fazer um Web Scraping, de uma determinada pagina.
 
-# Licença
+# 📝 Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 <hr>
