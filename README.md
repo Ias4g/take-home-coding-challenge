@@ -1,4 +1,4 @@
-[Tecnologias](https://google.com) | [Projeto](https://google.com) | [Layout](https://google.com) | [Licença](https://google.com)
+[Tecnologias](https://github.com/Ias4g/take-home-coding-challenge#-tecnologias) | [Projeto](https://google.com) | [Layout](https://google.com) | [Licença](https://google.com)
 
 ![banner](https://user-images.githubusercontent.com/62667424/186507967-4d89772c-4680-490a-b07e-3bbdf579e716.png)
 
