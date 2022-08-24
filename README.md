@@ -5,7 +5,7 @@
 # take-home-coding-challenge
  Take Home Coding Challenge Processo Seletivo Infosimples
 
-## Tecnologias
+# 🚀 Tecnologias
 Este projeto foi desenvolvido comas seguintes tecnologias
 * [Node.JS](https://nodejs.org/en/)
 * [Puppeteer](https://github.com/puppeteer/puppeteer)
