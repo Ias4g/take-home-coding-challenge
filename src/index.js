@@ -8,7 +8,6 @@ import puppeteer from 'puppeteer'
     await page.goto('https://storage.googleapis.com/infosimples-public/commercia/case/product.html')
 
     const txtList = await page.evaluate(() => {
-        // Toda esta função será executada no browser.
         // Vamos pegar todas as imagens que estão na parte de posts.
         const { innerText: title } = document.querySelector('h2#product_title')
         const { innerText: brand } = document.querySelector('div.brand')
@@ -16,7 +15,6 @@ import puppeteer from 'puppeteer'
         const { innerText: description } = document.querySelector('div.product-details p')
         const nodeListSkus = document.querySelectorAll('div.card-container')
         const nodeListProperties = document.querySelectorAll('table tbody tr')
-
         const { innerText: average_score } = document.querySelector('div#comments h4')
         const nodeListReviews = document.querySelectorAll('div#comments div.review-box')
 
@@ -67,10 +65,6 @@ import puppeteer from 'puppeteer'
                 value
             }
         })
-
-        // const objectReviews = arratReviews.map(({ innerText }) => (
-        //     innerText
-        // ))
 
         const objectReviews = arratReviews.map(({ innerText }) => {
             const [left, text] = innerText.split('\n\n')
