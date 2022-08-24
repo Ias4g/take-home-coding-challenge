@@ -17,6 +17,7 @@ import puppeteer from 'puppeteer'
         const nodeListProperties = document.querySelectorAll('table tbody tr')
         const { innerText: average_score } = document.querySelector('div#comments h4')
         const nodeListReviews = document.querySelectorAll('div#comments div.review-box')
+        const url = window.location.href
 
         // Transformar o NodeList em Array.
         const arrayCategories = [...nodeListCategories]
@@ -93,7 +94,8 @@ import puppeteer from 'puppeteer'
             skus: objectSkus,
             properties: objectProperties,
             reviews: objectReviews,
-            reviews_average_score
+            reviews_average_score,
+            url
         }
 
         // Colocar para fora da função
