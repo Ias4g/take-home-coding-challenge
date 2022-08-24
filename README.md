@@ -19,3 +19,7 @@ Este projeto foi desenvolvido para fazer um Web Scraping, de uma determinada pag
 
 # Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+<hr>
+
+Feito com ♥ by Izael Silva 👋
