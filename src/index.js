@@ -110,7 +110,5 @@ import puppeteer from 'puppeteer'
         console.log('Well done!')
     })
 
-
     await browser.close()
-    console.log(txtList)
 })()
