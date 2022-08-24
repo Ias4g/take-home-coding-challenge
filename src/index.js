@@ -34,11 +34,12 @@ import puppeteer from 'puppeteer'
                 name,
                 currentPrice = null,
                 oldPrice = null,
-                available = false
+                available = true
             ] = innerText.split("\n")
 
             if (currentPrice === "Out of stock") {
                 currentPrice = null
+                available = false
             }
 
             if (currentPrice !== null) {
