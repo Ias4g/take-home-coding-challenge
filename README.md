@@ -3,7 +3,8 @@
 <p align="center">
     <a href="https://github.com/Ias4g/take-home-coding-challenge#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="https://github.com/Ias4g/take-home-coding-challenge#projeto">Projeto</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="https://github.com/Ias4g/take-home-coding-challenge#licença">Lincença</a>
+    <a href="https://github.com/Ias4g/take-home-coding-challenge#licença">Lincença</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://github.com/Ias4g/take-home-coding-challenge#como-executar">Como executar</a>
 </p>
 
 <div align="center">
@@ -26,6 +27,12 @@ Este projeto foi desenvolvido para fazer um Web Scraping, de uma determinada pag
 
 # 📝 Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+# 🚀 Como executar
+* Clone o repositório
+* Instale as dependências com ```yarn```
+Inicie o servidor com yarn dev
+Agora você pode acessar localhost:3000 do seu navegador.
 
 <hr>
 
