@@ -6,6 +6,13 @@
     <a href="https://github.com/Ias4g/take-home-coding-challenge#licença">Lincença</a>
 </p>
 
+<div align="center">
+    <img alt="GitHub" src="https://img.shields.io/github/license/Ias4g/take-home-coding-challenge?color=%2323BFD0&logoColor=%230F0F0F"/>
+    <img alt="GitHub" src="https://img.shields.io/badge/PRs-welcome-23BFD0" />
+</div>
+
+<br>
+
 ![banner](https://user-images.githubusercontent.com/62667424/186507967-4d89772c-4680-490a-b07e-3bbdf579e716.png)
 
 
