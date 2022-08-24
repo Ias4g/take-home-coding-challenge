@@ -4,7 +4,7 @@
     <a href="https://github.com/Ias4g/take-home-coding-challenge#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="https://github.com/Ias4g/take-home-coding-challenge#projeto">Projeto</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="https://github.com/Ias4g/take-home-coding-challenge#licença">Lincença</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="https://github.com/Ias4g/take-home-coding-challenge#como-executar">Como executar</a>
+    <a href="https://github.com/Ias4g/take-home-coding-challenge#-como-executar">Como executar</a>
 </p>
 
 <div align="center">
