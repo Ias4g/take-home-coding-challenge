@@ -34,7 +34,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 * Inicie o servidor com ```yarn dev``` ou ```npm run dev```
 
 
-Após rodar o projeto, se tudo der certo aparecerá no console a mensagem ***Well done!*** e um arquivo ***file.json*** será criado na raiz do sistema. Caso dê erro apresentará ***Something went wrong!***
+Após rodar o projeto, se tudo der certo aparecerá no console a mensagem ``Well done!`` e um arquivo ``file.json`` será criado na raiz do sistema. Caso dê erro apresentará ``Something went wrong!``
 
 <hr>
 
