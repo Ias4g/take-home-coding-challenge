@@ -1,8 +1,12 @@
-[Tecnologias](https://github.com/Ias4g/take-home-coding-challenge#-Tecnologias) | [Projeto](https://github.com/Ias4g/take-home-coding-challenge#projeto) | [Licença](https://github.com/Ias4g/take-home-coding-challenge#licença)
+<h1 align="center">take-home-coding-challenge</h1>
+<p align="center">
+    <a href="https://github.com/Ias4g/take-home-coding-challenge#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://github.com/Ias4g/take-home-coding-challenge#projeto">Projeto</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://github.com/Ias4g/take-home-coding-challenge#licença">Lincença</a>
+</p>
 
 ![banner](https://user-images.githubusercontent.com/62667424/186507967-4d89772c-4680-490a-b07e-3bbdf579e716.png)
 
-# take-home-coding-challenge
  Take Home Coding Challenge Processo Seletivo Infosimples
 
 # 🚀 Tecnologias
