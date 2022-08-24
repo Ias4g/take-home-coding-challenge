@@ -15,11 +15,16 @@ import puppeteer from 'puppeteer'
         const nodeListCategories = document.querySelectorAll('nav a')
         const { innerText: description } = document.querySelector('div.product-details p')
         const nodeListSkus = document.querySelectorAll('div.card-container')
+        const nodeListProperties = document.querySelectorAll('table tbody tr')
+
         const { innerText: average_score } = document.querySelector('div#comments h4')
+        const nodeListReviews = document.querySelectorAll('div#comments div.review-box')
 
         // Transformar o NodeList em Array.
         const arrayCategories = [...nodeListCategories]
         const arraySkus = [...nodeListSkus]
+        const arrayProperties = [...nodeListProperties]
+        const arratReviews = [...nodeListReviews]
 
         // Transformar os Nodes (elementos html) em objetos JS
         const objectCategories = arrayCategories.map(({ innerText }) => (
@@ -54,6 +59,33 @@ import puppeteer from 'puppeteer'
             }
         })
 
+        const objectProperties = arrayProperties.map(({ innerText }) => {
+            const [label, value] = innerText.split('\t')
+
+            return {
+                label,
+                value
+            }
+        })
+
+        // const objectReviews = arratReviews.map(({ innerText }) => (
+        //     innerText
+        // ))
+
+        const objectReviews = arratReviews.map(({ innerText }) => {
+            const [left, text] = innerText.split('\n\n')
+            const [name, date, stars] = left.split('\n')
+
+            const score = Number((stars.match(/★/g) || []).length)
+
+            return {
+                name,
+                date,
+                score,
+                text
+            }
+        })
+
         const score = average_score.substr(15)
         const reviews_average_score = parseFloat(score.replace('/5', ''))
 
@@ -64,6 +96,8 @@ import puppeteer from 'puppeteer'
             categories: objectCategories,
             description,
             skus: objectSkus,
+            properties: objectProperties,
+            reviews: objectReviews,
             reviews_average_score
         }
 
