@@ -14,7 +14,7 @@
 
 <br>
 
-![banner](https://user-images.githubusercontent.com/62667424/186507967-4d89772c-4680-490a-b07e-3bbdf579e716.png)
+![banner](./src/assets/banner.png)
 
 
 # 🚀 Tecnologias
